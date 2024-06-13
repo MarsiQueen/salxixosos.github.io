@@ -1,13 +1,13 @@
 .header {
     background-color: #0072C6;
     color: #FFFFFF;
-    padding: 20px;
+    padding: 0.02px;
     text-align: center;
 }
 .nav {
     background-color: #0072C6;
     color: #FFFFFF;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 .nav a {
@@ -18,6 +18,9 @@
 }
 .nav a:hover {
     text-decoration: underline;
+}
+#main-frame{
+    width: 70%;
 }
 body {
     font-family: Arial, sans-serif;
@@ -37,6 +40,7 @@ body {
 }
 .section {
     margin-bottom: 20px;
+    text-align: center;
 }
 .section h2 {
     color: #68B646;
