@@ -1,24 +1,25 @@
 .header {
     background-color: #0072C6;
     color: #FFFFFF;
-    padding: 20px;
     text-align: center;
+
 }
+
 .nav {
     background-color: #0072C6;
-    color: #FFFFFF;
-    padding: 15px;
-    text-align: center;
+
 }
+
 .nav a {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
+
 .nav a:hover {
     text-decoration: underline;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,21 +27,29 @@ body {
     background-color: #FFFFFF;
     color: #000000;
 }
+
 .content {
     padding: 20px;
-    text-align: center;
 }
+
 .highlight {
     border: 2px solid #68B646;
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.content h2 {
+    color: #68B646;
+}
+
 .section {
     margin-bottom: 20px;
 }
+
 .section h2 {
     color: #68B646;
 }
+
 .button {
     background-color: #68B646;
     color: #FFFFFF;
@@ -54,20 +63,18 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .button:hover {
     background-color: #5A9A38;
 }
+
 .icon {
     color: #0072C6;
     font-size: 24px;
     margin: 10px;
     cursor: pointer;
 }
+
 .icon:hover {
     color: #005A99;
 }
-ul {
-
-    list-style-type: none;
-  
-  }
