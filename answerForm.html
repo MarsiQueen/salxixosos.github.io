@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCT Manager - Documentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/mainstyles.css">
+    
+</head>
+
+<body>
+    <div class="header w-100 py-1">
+
+        <div class="container-fluid">
+
+            <h2 class="text-white fs-1 text-center text-uppercase">Answer Form</h2>
+
+        </div>
+        <div class="nav w-100" >
+            <div class="container d-flex justify-content-center">
+              <a class="nav-link text-white" href="index.html">Main</a>
+              <a class="nav-link text-white" href="login.html">Log-in</a>
+              <a class="nav-link text-white" href="interface.html">User's interface</a>
+              <a class="nav-link text-white" href="querys.html">Querys</a>
+              <a class="nav-link text-white" href="contactForm.html">Contact Form</a>
+          </div>
+        </div>
+    </div>
+    <div>
+        <div class="container mt-4">
+
+            <div class="section">
+                <div class="container mt-4">
+
+                    <h2>The Form has been sent</h1>
+                    <p>The following data has been sent. You will receive a response in your email as soon as possible. 
+                        <br/>Thank you for contacting us.</p>
+
+                    <div id="nombre_completo"></div>
+                    <div id="email"></div>
+                    <div id="phone"></div>
+             
+                    <div class="mt-3" id="radio_option"></div>
+                    <div id="radio_buttons"></div>
+             
+                    <br/>
+          
+                    <div id="devices"></div>
+                    <div id="device1"></div>
+                    <div id="device2"></div>
+                    <div id="device3"></div>
+                    <div id="device4"></div>
+                  
+                  </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onload=function(){
+
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          
+          for(var i = 0; i < hashes.length; i++)
+          {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+          }
+
+          document.getElementById("nombre_completo").innerHTML = "<strong>Full Name: </strong>" + vars["fullname"].replace("+"," ").replace("+"," ").replace("%C3%B1","ñ");
+          document.getElementById("email").innerHTML = "<strong>Email: </strong>" + vars["email"].replace("%40","@");
+          document.getElementById("phone").innerHTML = "<strong>Phone Number: </strong>" + vars["phone"];
+
+          document.getElementById("radio_option").innerHTML = "<h2> Thanks for asking for infor about: </h2>";
+          document.getElementById("radio_buttons").innerHTML = vars["opcion"].replace("+"," ").replace("+"," ").replace("+"," ");
+
+
+          document.getElementById('devices').innerHTML = '<h2>Thank you for:</h2>';
+
+          if (vars['condiciones1']!=undefined) {
+           document.getElementById('device1').innerHTML = '<strong>Accept and read the terms and conditions</strong>';
+         }
+
+         if (vars['Acepto2']!=undefined) {
+           document.getElementById('device2').innerHTML = '<strong>Sharing your info with SalxixOsos S.A.</strong>';
+         }
+         
+         if (vars['Acepto3']!=undefined) {
+           document.getElementById('device3').innerHTML = '<strong>Join the salxixOsecta</strong>';
+         }
+
+         if (vars['Acepto4']!=undefined) {
+           document.getElementById('device4').innerHTML = '<strong>Receive advertising from SalxixOsos S.A.</strong>';
+         }
+
+        }
+       </script>
+</body>
+
+</html>
