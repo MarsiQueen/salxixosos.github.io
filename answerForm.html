@@ -79,7 +79,7 @@
           document.getElementById("phone").innerHTML = "<strong>Phone Number: </strong>" + vars["phone"];
 
           document.getElementById("radio_option").innerHTML = "<h2> Thanks for asking information about: </h2>";
-          document.getElementById("radio_buttons").innerHTML = vars["opcion"].replace("+"," ").replace("+"," ").replace("+"," ");
+          document.getElementById("radio_buttons").innerHTML = vars["opcion"].replace("+"," ").replace("+"," ").replace("+"," ").replace("%2F","/").replace("%2F","/");
 
 
           document.getElementById('devices').innerHTML = '<h2>Thank you for:</h2>';
