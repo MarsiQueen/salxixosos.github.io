@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features explained</title>
-    <link rel="stylesheet" href="css/mainstyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/mainstyles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Querys explained</h1>
+    <header class="header w-100 py-1">
+        <div class="container">
+            <h1>Querys explained</h1>
+        </div>
+    </header>
+    <nav class="nav w-100">
+        <div class="container d-flex justify-content-center">
+            <a class="nav-link text-white" href="index.html">Main</a>
+            <a class="nav-link text-white" href="login.html">Log-in</a>
+            <a class="nav-link text-white" href="interface.html">User's interface</a>
+            <a class="nav-link text-white" href="querys.html">Querys</a>
+            <a class="nav-link text-white" href="faq.html">FAQ</a>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="content">
+            <div class="highlight">
+                <h2>Company responsible</h2>
+                <p>Query to display, given a company, the company data, responsible professor, and company contact personnel.</p>
+            </div>
+            <div class="highlight">
+                <h2>Internship hosts</h2>
+                <p>Query to display, given an educational cycle and a school year, the companies that have hosted internships and the number of internships hosted.</p>
+            </div>
+            <div class="highlight">
+                <h2>Group tutor & FCT placements</h2>
+                <p>Query that displays, given a school group and a school year, the details of the group's tutor teacher and the companies where they are carrying out their FCTs, along with the number of placements hosted.</p>
+            </div>
+            <div class="highlight">
+                <h2>Internship details</h2>
+                <p>Query that displays, given a company and a school year, the FCT details.</p>
+            </div>
+        </div>
     </div>
-    <div class="nav">
-        <a href="index.html">Main</a>
-        <a href="login.html">Log-in</a>
-        <a href="interface.html">User's interface</a>
-        <a href="querys.html">Querys</a>
-        <a href="faq.html">FAQ</a>
-    </div>
-    <div class="content">
-        <div class="highlight">
-            <h2>Company responsible</h2>
-            <p>Query to display, given a company, the company data, responsible professor, and company contact personnel.</p>
-        </div>
-        <div class="highlight">
-            <h2>Intership hosts</h2>
-            <p>Query to display, given a educational cycle and a school year, the companies that have hosted internships and the number of internships hosted.</p>
-        </div>
-        <div class="highlight">
-            <h2>Group tutor & FCT placements</h2>
-            <p>Query that displays, given a school group and a school year, the details of the group's tutor teacher and the companies where they are carrying out their FCTs, along with the number of placements hosted.</p>
-        </div>
-        <div class="highlight">
-            <h2>Rnternship details</h2>
-            <p>Query that displays, given a company and a school year, the FCT details.</p>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
